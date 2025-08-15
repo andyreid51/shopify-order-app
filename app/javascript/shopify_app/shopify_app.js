@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const productsLink = AppLink.create(app, {
     label: 'Products',
-    destination: '/products',
+    destination: '/',
   });
   
   const settingsLink = AppLink.create(app, {

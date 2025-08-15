@@ -1,11 +1,12 @@
 <%= polaris_page(
-  title: "Invoice",
-  subtitle: "Statement period: May 3, 2019 to June 2, 2019",
+  title: "Village orders",
+  
   back_url: "/products",
   secondary_actions: [
     { content: "Download", url: "/download", icon_name: "ArrowDownIcon" },
   ]
-) do %>
+) do |page| %>
+  <% page.with_primary_action() { "Create order" } %>
   <%= polaris_card(title: "Credit card") do %>
     <p>Credit card information</p>
   <% end %>

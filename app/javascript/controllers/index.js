@@ -7,5 +7,5 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-import { registerPolarisControllers } from "polaris-view-components"
-registerPolarisControllers(Stimulus)
+import ResourcePickerController from "./resource_picker_controller"
+application.register("resource-picker", ResourcePickerController)
