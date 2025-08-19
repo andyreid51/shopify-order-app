@@ -9,6 +9,7 @@
   <% page.with_primary_action() { "Create order" } %>
   <%= polaris_card(title: "Credit card") do %>
     <p>Credit card information</p>
+    <%= @products.first.id %>
   <% end %>
 <% end %>
 
