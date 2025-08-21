@@ -10,6 +10,17 @@
   <%= polaris_card(title: "Credit card") do %>
     <p>Credit card information</p>
     <%= @products.first.id %>
+    <%= @product["node"]["title"] %>
+    <h1>Graphql product</h1>
+    <%= @product_gql.title%>
+    <h1>Products</h1>
+    <% @graph_products.each do |product| %>
+      <div>
+        <h2><%= product.title %></h2>
+        <%= @access_token %>
+        
+      </div>
+    <% end %>
   <% end %>
 <% end %>
 
