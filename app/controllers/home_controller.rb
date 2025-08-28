@@ -56,5 +56,9 @@ class HomeController < ApplicationController
     Shop.system.with_shopify_session do
       @graph_products = GetProducts.call.data
     end
+
+    Shop.system.with_shopify_session do
+      @variant = GetProductVariant.call(id: "gid://shopify/ProductVariant/42314471932022").data
+    end
   end
 end

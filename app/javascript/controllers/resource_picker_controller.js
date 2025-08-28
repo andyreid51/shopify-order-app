@@ -26,7 +26,7 @@ export default class extends Controller {
     const resourcePicker = ResourcePicker.create(this.app, {
       resourceType: ResourcePicker.ResourceType.Product,
       options: {
-        selectMultiple: true,
+        selectMultiple: false,
       },
     });
 

@@ -13,6 +13,15 @@
     <%= @product["node"]["title"] %>
     <h1>Graphql product</h1>
     <%= @product_gql.title%>
+    <h1>Variant</h1>
+    <p>
+    id
+    <%= @variant.id%>
+    </p>
+    <p>
+    Title
+    <%= @variant.title%>
+    </p>
     <h1>Products</h1>
     <% @graph_products.each do |product| %>
       <div>
